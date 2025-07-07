@@ -2,13 +2,11 @@ import streamlit as st
 from langchain_groq import ChatGroq
 from pydantic import BaseModel, Field
 from typing import TypedDict, Annotated, Optional, Literal
-from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate,load_prompt
 
+API_KEY="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"
 
-load_dotenv()
-
-model=ChatGroq(model="llama-3.1-8b-instant",temperature=0.5)
+model=ChatGroq(model="llama-3.1-8b-instant",temperature=0.5,api_key=API_KEY)
 result_copy=None
 
 # result={}
