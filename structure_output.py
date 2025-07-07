@@ -5,8 +5,7 @@ from typing import TypedDict, Annotated, Optional, Literal
 from langchain_core.prompts import PromptTemplate,load_prompt
 
 
-
-GROQ_API_KEY="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"
+API_KEY="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"
 
 model=ChatGroq(model="llama-3.1-8b-instant",temperature=0.5,api_key=GROQ_API_KEY)
 result_copy=None
